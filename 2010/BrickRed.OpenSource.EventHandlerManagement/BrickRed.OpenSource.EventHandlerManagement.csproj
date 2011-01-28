@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E591FB06-6639-43B9-91D7-A6C7D1CA6B6A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BrickRed.OpenSource.EventHandlerManagement</RootNamespace>
+    <AssemblyName>BrickRed.OpenSource.EventHandlerManagement</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\GlobalConstants.cs" />
+    <Compile Include="Entities\EventHandler.cs" />
+    <Compile Include="Layouts\BrickRed.OpenSource.EventHanlderManagement\ConfigurationWizard.aspx.cs">
+      <DependentUpon>ConfigurationWizard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\BrickRed.OpenSource.EventHanlderManagement\ConfigurationWizard.aspx.designer.cs">
+      <DependentUpon>ConfigurationWizard.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\BrickRed.OpenSource.EventHanlderManagement\RegisterNewEvent.aspx.cs">
+      <DependentUpon>RegisterNewEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\BrickRed.OpenSource.EventHanlderManagement\RegisterNewEvent.aspx.designer.cs">
+      <DependentUpon>RegisterNewEvent.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Elements\ListElement\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3f09d3de-d5a1-4bfe-83f0-56f4682019db}</SharePointProjectItemId>
+    </None>
+    <None Include="Elements\WebElement\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dcc8f99d-478c-4d51-af4c-31f52146e281}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\WebEventHandler\WebEventHandler.feature">
+      <FeatureId>{572c40bf-66c0-4e3d-9732-f55e29e315c0}</FeatureId>
+    </None>
+    <None Include="Features\ListEventHandler\ListEventHandler.feature">
+      <FeatureId>{f321c256-acd1-423f-8adb-3f6551c392fa}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7eacb2c5-4c93-4948-8de1-9dbc9e65f19e}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{4795b05e-e0a1-472d-b469-1a58886f6d77}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Elements\ListElement\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Elements\WebElement\Elements.xml" />
+    <Content Include="Features\WebEventHandler\WebEventHandler.Template.xml">
+      <DependentUpon>WebEventHandler.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\ListEventHandler\ListEventHandler.Template.xml">
+      <DependentUpon>ListEventHandler.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\BrickRed.OpenSource.EventHanlderManagement\ConfigurationWizard.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\BrickRed.OpenSource.EventHanlderManagement\RegisterNewEvent.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>
