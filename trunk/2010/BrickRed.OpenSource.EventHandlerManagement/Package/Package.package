@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="4795b05e-e0a1-472d-b469-1a58886f6d77" solutionId="4795b05e-e0a1-472d-b469-1a58886f6d77" resetWebServer="false" name="BrickRed.OpenSource.EventHandlerManagement" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="f321c256-acd1-423f-8adb-3f6551c392fa" />
+    <featureReference itemId="572c40bf-66c0-4e3d-9732-f55e29e315c0" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="7eacb2c5-4c93-4948-8de1-9dbc9e65f19e" />
+  </projectItems>
+</package>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+               Id="BrickRed.OpenSource.EventHanlderManagement.ListElement"
+               GroupId="GeneralSettings"
+               Location="Microsoft.SharePoint.ListEdit"
+               Sequence="1000"
+               Rights="ManageList"
+               Title="Event Handlers Settings">
+    <UrlAction Url="~site/_layouts/BrickRed.OpenSource.EventHanlderManagement/ConfigurationWizard.aspx?ListId={ListId}"/>
+  </CustomAction>
+</Elements>
