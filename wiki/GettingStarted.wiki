@@ -3,30 +3,30 @@
     OR 
   # !SharePoint Foundation 2010 / !SharePoint 2010 Environment 
 == Step 1. WSP Installation ==
-  # Download [http://sharepoint-twitter.googlecode.com/files/sharepoint-twitter-1.0.zip WSP for 2007] or [http://sharepoint-twitter.googlecode.com/files/sharepoint-twitter-2.0.zip WSP for 2010] and unzip the Facebook Wall Web Part archive. 
-  This contains the WSP file, deploy solution batch file and retract solution batch file
-  # Change URL property from "<<Server URL>>" to your server URL in both the deploy and retract solution files
-  # Now run deploy solution file <br/> http://sharepoint-twitter.googlecode.com/svn/wiki/Images/install-solution.png
-  # This will add the solution in solutions gallery <br/> http://sharepoint-twitter.googlecode.com/svn/wiki/Images/solution-properties.PNG
-  # This will also deploy the feature in site features gallery on specified web portal url<br/> http://sharepoint-twitter.googlecode.com/svn/wiki/Images/write-features-gallery.PNG
+  # Download [http://sharepoint-eventhandlers-manager.googlecode.com/files/sharepoint-eventhandlers-manager-2007-1.0.zip WSP for 2007] or [http://sharepoint-eventhandlers-manager.googlecode.com/files/sharepoint-eventhandlers-manager-2010-2.0.zip WSP for 2010] and unzip the Event handler management archive. 
+  This contains the WSP file, deploy solution powershell script file and retract solution powershell script file
+  # Right click and select "Run with PowerShell" comand to deploy the solution file <br/> http://sharepoint-eventhandlers-manager.googlecode.com/svn/wiki/Images/run-with-powershell.png
+  # It will ask you for the web URL and will install the solution package on your server <br/> http://sharepoint-eventhandlers-manager.googlecode.com/svn/wiki/Images/install-solution.png
+  # This will add the solution in solutions gallery <br/> http://sharepoint-eventhandlers-manager.googlecode.com/svn/wiki/Images/solution-properties.PNG
+  # This will also deploy two features in site collection features gallery <br/> http://sharepoint-eventhandlers-manager.googlecode.com/svn/wiki/Images/write-features-gallery.PNG
 
 == Step 2. Register your Twitter Application ==
   # Go to http://dev.twitter.com/start
-  # Now you need to register your application <br/> http://sharepoint-twitter.googlecode.com/svn/wiki/Images/register-application.png
-  # Login with your existing credentials or Register first to get login credentials <br/> http://sharepoint-twitter.googlecode.com/svn/wiki/Images/login.png
-  # Once you are done with the application registration process you will be redirected to application settings page. From this page we will get the Consumer Key and Consumer Secret <br/> http://sharepoint-twitter.googlecode.com/svn/wiki/Images/application-settings.png
-  # Next you need to fetch the Access Token and Access Token Secret from "My Access Token" link provide in the right navigation pane of application settings page <br/> http://sharepoint-twitter.googlecode.com/svn/wiki/Images/access-tokens.png
+  # Now you need to register your application <br/> http://sharepoint-eventhandlers-manager.googlecode.com/svn/wiki/Images/register-application.png
+  # Login with your existing credentials or Register first to get login credentials <br/> http://sharepoint-eventhandlers-manager.googlecode.com/svn/wiki/Images/login.png
+  # Once you are done with the application registration process you will be redirected to application settings page. From this page we will get the Consumer Key and Consumer Secret <br/> http://sharepoint-eventhandlers-manager.googlecode.com/svn/wiki/Images/application-settings.png
+  # Next you need to fetch the Access Token and Access Token Secret from "My Access Token" link provide in the right navigation pane of application settings page <br/> http://sharepoint-eventhandlers-manager.googlecode.com/svn/wiki/Images/access-tokens.png
 
 == Step 3. Configuration of the Tweet webpart ==
 
-  # Now you need to add the web part on the page from Web Part gallery <br/> http://sharepoint-twitter.googlecode.com/svn/wiki/Images/webpart-pane.png 
-  # Once added, Configure screen name , Consumer Key , Consumer Secret, Access Token, Access Token Secret from the saved information in step 2 and also configure the tweet count  and whether to show user image and description <br/> http://sharepoint-twitter.googlecode.com/svn/wiki/Images/webpart-properties.png
-  # Once configured you will be able to see the tweets of this user <br/> http://sharepoint-twitter.googlecode.com/svn/wiki/Images/webpart-demo.png
+  # Now you need to add the web part on the page from Web Part gallery <br/> http://sharepoint-eventhandlers-manager.googlecode.com/svn/wiki/Images/webpart-pane.png 
+  # Once added, Configure screen name , Consumer Key , Consumer Secret, Access Token, Access Token Secret from the saved information in step 2 and also configure the tweet count  and whether to show user image and description <br/> http://sharepoint-eventhandlers-manager.googlecode.com/svn/wiki/Images/webpart-properties.png
+  # Once configured you will be able to see the tweets of this user <br/> http://sharepoint-eventhandlers-manager.googlecode.com/svn/wiki/Images/webpart-demo.png
 
 == Step 4. Configuration of the Show Tweets webpart ==
-  # Please note the code from previous step. Now you need to add the web part on the page from Web Part gallery <br/> http://sharepoint-twitter.googlecode.com/svn/wiki/Images/webpart-write-pane.PNG
-  # Once added, Configure following properties <br/> http://sharepoint-twitter.googlecode.com/svn/wiki/Images/webpart-write-properties.PNG
-  # Once configured you will be able to tweet for this user <br/> http://sharepoint-twitter.googlecode.com/svn/wiki/Images/webpart-write-demo.png
+  # Please note the code from previous step. Now you need to add the web part on the page from Web Part gallery <br/> http://sharepoint-eventhandlers-manager.googlecode.com/svn/wiki/Images/webpart-write-pane.PNG
+  # Once added, Configure following properties <br/> http://sharepoint-eventhandlers-manager.googlecode.com/svn/wiki/Images/webpart-write-properties.PNG
+  # Once configured you will be able to tweet for this user <br/> http://sharepoint-eventhandlers-manager.googlecode.com/svn/wiki/Images/webpart-write-demo.png
   
   
  

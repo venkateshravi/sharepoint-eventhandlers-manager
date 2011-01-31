@@ -84,6 +84,9 @@
     <None Include="Features\ListEventHandler\ListEventHandler.feature">
       <FeatureId>{f321c256-acd1-423f-8adb-3f6551c392fa}</FeatureId>
     </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0f731f00-0978-47bb-8a1c-e63c44b3def7}</SharePointProjectItemId>
+    </None>
     <None Include="key.snk" />
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{7eacb2c5-4c93-4948-8de1-9dbc9e65f19e}</SharePointProjectItemId>
@@ -103,10 +106,13 @@
     <Content Include="Elements\WebElement\Elements.xml" />
     <Content Include="Features\WebEventHandler\WebEventHandler.Template.xml">
       <DependentUpon>WebEventHandler.feature</DependentUpon>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Features\ListEventHandler\ListEventHandler.Template.xml">
       <DependentUpon>ListEventHandler.feature</DependentUpon>
+      <SubType>Designer</SubType>
     </Content>
+    <Content Include="Images\BrickRed\BrickRedFeatureLogo.png" />
     <Content Include="Layouts\BrickRed.OpenSource.EventHanlderManagement\ConfigurationWizard.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
