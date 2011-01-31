@@ -1,3 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/">
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="This feature enables the Event Handlers Management functionality for the web." Id="796285f2-e985-4137-937b-609c5758179b" Scope="Site" Title="BrickRed Web Event Handlers Management" ImageUrl="/BrickRed/BrickRedFeatureLogo.png">
+  <ElementManifests>
+    <ElementManifest Location="WebElement\Elements.xml" />
+  </ElementManifests>
 </Feature>

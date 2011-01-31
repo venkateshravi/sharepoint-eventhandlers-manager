@@ -1,3 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/">
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="BrickRed List Event Handlers Management" Description="This feature enables the Event Handlers Management functionality for the list." Id="aab199d8-2593-4c8d-b62c-807988d65bcb" ImageUrl="/BrickRed/BrickRedFeatureLogo.png" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="ListElement\Elements.xml" />
+  </ElementManifests>
 </Feature>
