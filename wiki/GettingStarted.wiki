@@ -12,4 +12,4 @@
   # Go to Site Settings then Event Handlers Settings OR go to any list settings and then Event Handlers Settings <br/> http://sharepoint-eventhandlers-manager.googlecode.com/svn/wiki/Images/event-handler-settings.png
   # Here you will see the existing event handlers attached to web or list. You can register new event handler by clicking "Register New Event Handler" link. Make sure that you already placed the DLL in GAC before this step otherwise system will throw an error 
   <br/> http://sharepoint-eventhandlers-manager.googlecode.com/svn/wiki/Images/event-handler-register.png
-  # Thats all you need to manage your event handlers in !SharePoint 2010 environment and you dont require to register and unregister them from code anymore. 
+  Thats all you need to manage your event handlers in !SharePoint 2010 environment and you dont require to register and unregister them from code anymore. 
