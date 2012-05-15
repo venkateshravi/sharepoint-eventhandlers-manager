@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F794FA69-3704-4B05-9C89-29EC49C1D581}</ProjectGuid>
+    <ProjectTypeGuids>{593B0543-81F6-4436-BA1E-4747859CAAE2};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BrickRed.OpenSource.EventHandlerManagement</RootNamespace>
+    <AssemblyName>BrickRed.OpenSource.EventHandlerManagement</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>Properties\BrickRed.OpenSource.EventHandlerManagement.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>URL</StartAction>
+    <StartURL>http://localhost/</StartURL>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>URL</StartAction>
+    <StartURL>http://localhost/</StartURL>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.XML" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\GlobalConstants.cs" />
+    <Compile Include="Entities\EventHandler.cs" />
+    <Compile Include="12\TEMPLATE\Layouts\BrickRed.OpenSource.EventHandlerManagement\ConfigurationWizard.aspx.cs">
+      <DependentUpon>ConfigurationWizard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="12\TEMPLATE\Layouts\BrickRed.OpenSource.EventHandlerManagement\ConfigurationWizard.aspx.designer.cs">
+      <DependentUpon>ConfigurationWizard.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="12\TEMPLATE\Layouts\BrickRed.OpenSource.EventHandlerManagement\RegisterNewEvent.aspx.cs">
+      <DependentUpon>RegisterNewEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="12\TEMPLATE\Layouts\BrickRed.OpenSource.EventHandlerManagement\RegisterNewEvent.aspx.designer.cs">
+      <DependentUpon>RegisterNewEvent.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\BrickRed.OpenSource.EventHandlerManagement.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="12\TEMPLATE\FEATURES\BrickRed.OpenSource.EventHandlerManagement.ListEventHandler\Feature.xml" />
+    <Content Include="12\TEMPLATE\FEATURES\BrickRed.OpenSource.EventHandlerManagement.ListEventHandler\ListElement\Elements.xml" />
+    <Content Include="12\TEMPLATE\FEATURES\BrickRed.OpenSource.EventHandlerManagement.WebEventHandler\Feature.xml" />
+    <Content Include="12\TEMPLATE\FEATURES\BrickRed.OpenSource.EventHandlerManagement.WebEventHandler\WebElement\Elements.xml" />
+    <Content Include="12\TEMPLATE\Layouts\BrickRed.OpenSource.EventHandlerManagement\ConfigurationWizard.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="12\TEMPLATE\Layouts\BrickRed.OpenSource.EventHandlerManagement\RegisterNewEvent.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties IfFullTrust="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
